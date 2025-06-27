@@ -32,18 +32,6 @@ A smart, ML-driven system to automatically classify DevOps system logs (e.g., cr
 
 ## 📂 Project Structure
 
-devops-incident-classifier/
-├── simulate_logs.py # Generates mock logs
-├── classify_logs.py # Classifies logs (rule-based or ML)
-├── integrations/
-│ └── slack.py # Slack notifications (optional)
-├── models/ # Trained ML models (joblib/pickle)
-├── logs/ # Sample log files
-├── Dockerfile # For containerization
-├── README.md
-└── requirements.txt
-
-
 
 ---
 
@@ -56,13 +44,4 @@ pip install -r requirements.txt
 python simulate_logs.py
 python classify_logs.py
 
---- 
 
-##  🧠 Planned Enhancements
- Replace rule-based logic with ML model (BERT or fine-tuned classifier)
-
- Auto-create tickets for critical incidents
-
- Dashboard to display live classified stats
-
- Deploy on AWS Lambda with CI/CD
